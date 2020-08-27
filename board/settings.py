@@ -55,7 +55,7 @@ ROOT_URLCONF = 'board.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': [os.path.join(BASE_DIR, 'db.sqlite3')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
